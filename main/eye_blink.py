@@ -44,7 +44,7 @@ def eye_aspect_ratio(eye):
     return ear
 camera = cv2.VideoCapture(0)
 
-predictor_path = 'shape_predictor_68_face_landmarks.dat'
+predictor_path = 'artifacts/shape_predictor_68_face_landmarks.dat'
 
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(predictor_path)
