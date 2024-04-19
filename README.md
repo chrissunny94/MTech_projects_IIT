@@ -33,7 +33,7 @@ pip install mediapipe
 
 
 ```
-python3 scripts/eye_blink.py
+python3 main/eye_blink.py
 ```
 
 
