@@ -7,7 +7,34 @@ IIT-Jammu , project for ML course .
 - Shalin Saleem
 
 
+## Installation
 
+This projects runs on Python 3.9 with the following libraries:
+
+- numpy
+- OpenCV (opencv-python)
+- mediapipe
+
+You can use the requirements.txt file provided in the repository using:
+    
+    pip install -r requirements.txt
+    
+Or you can execute the following pip commands on terminal:
+
+```
+pip install numpy
+pip install opencv-python
+pip install mediapipe
+```
+
+
+
+## HOW TO RUN 
+
+
+```
+python3 scripts/eye_blink.py
+```
 
 
 Docs link
