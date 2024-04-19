@@ -32,9 +32,23 @@ pip install mediapipe
 ## HOW TO RUN 
 
 
+### EYE_BLINK detection
+
+- Each frame is processed to detect faces using the detector object.
+- For each detected face, facial landmarks are extracted using the predictor object.
+- The eye aspect ratio (EAR) is computed for both eyes and averaged.
+- Contours are drawn around the eyes based on the computed landmarks.
+- If the EAR falls below a threshold (indicating closed eyes), a drowsiness alert is triggered.
+- The script keeps track of consecutive frames where eyes remain closed (total variable).
+- If the total exceeds a threshold, a drowsiness alert is displayed on the frame.
+
 ```
 python3 main/eye_blink.py
 ```
+
+
+![Eye_blink System](docs/eye_detection.png)
+
 
 
 Docs link
