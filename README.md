@@ -43,6 +43,9 @@ pip install mediapipe
 - If the total exceeds a threshold, a drowsiness alert is displayed on the frame.
 
 ```
+#this will download the dlib model from the artifactory and store it locally
+sh scripts/download_dlib.sh
+# to run the python script
 python3 main/eye_blink.py
 ```
 
