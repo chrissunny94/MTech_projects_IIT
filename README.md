@@ -38,7 +38,7 @@ pip install opencv-python
 pip install mediapipe
 ```
 
-
+- https://github.com/davisking/dlib/issues/2943#issuecomment-2080361339
 
 ## HOW TO RUN 
 
