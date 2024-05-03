@@ -42,7 +42,7 @@ def eye_aspect_ratio(eye):
  
 	# return the eye aspect ratio
     return ear
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 
 predictor_path = 'artifacts/shape_predictor_68_face_landmarks.dat'
 

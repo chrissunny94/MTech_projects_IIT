@@ -1,7 +1,9 @@
 
 
-Driver Monitoring system 
-IIT-Jammu , project for ML course .
+# Driver Monitoring system 
+
+### IIT-Jammu , project for ML course .
+
 - Chris Sunny Thaliyath
 - Quadri Syed Mujtaba,
 - Shalin Saleem
@@ -30,16 +32,6 @@ You can use the requirements.txt file provided in the repository using:
     
     pip install -r requirements.txt
     
-Or you can execute the following pip commands on terminal:
-
-```
-pip install numpy
-pip install opencv-python
-pip install mediapipe
-```
-
-- https://github.com/davisking/dlib/issues/2943#issuecomment-2080361339
-
 ## HOW TO RUN 
 
 
