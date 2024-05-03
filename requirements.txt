@@ -1,8 +1,9 @@
+cmake
 numpy
 opencv-python
-mediapipe
-dlib
+#mediapipe
 cmake 
 face_recognition
 pygame
 imutils
+dlib

@@ -15,6 +15,17 @@ This projects runs on Python 3.9 with the following libraries:
 - OpenCV (opencv-python)
 - mediapipe
 
+https://virtualenv.pypa.io/en/latest/user_guide.html
+
+```
+pip3 install virtualenv
+```
+
+```
+virtualenv dms_env
+source dms_env/bin/activate
+```
+
 You can use the requirements.txt file provided in the repository using:
     
     pip install -r requirements.txt
