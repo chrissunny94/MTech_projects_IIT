@@ -5,7 +5,6 @@ import cv2
 import numpy as np
 from scipy.spatial import distance as dist
 import threading
-import pygame
  
 # initialize dlib's face detector (HOG-based) and then create
 # the facial landmark predictor
@@ -13,7 +12,7 @@ path = "artifacts/shape_predictor_68_face_landmarks.dat"
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(path)
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
  
 while True:
     # load the input image and convert it to grayscale
@@ -27,7 +26,7 @@ while True:
     rects = detector(gray, 0)
     height, width = gray.shape
     print(height, width)
-    mask = np.zeros((height, width, 2), np.uint8)
+    mask = np.zeros((height, width, 3), np.uint8)
     
     
     # loop over the face detections
@@ -41,10 +40,10 @@ while True:
         # loop over the (x, y)-coordinates for the facial landmarks
         # and draw them on the image
         for (x, y) in shape:
-            cv2.circle(mask, (x, y), 2, (0, 255, 0), -1)
+            cv2.circle(gray, (x, y), 2, (0, 255, 0), -1)
     
     # show the output image with the face detections + facial landmarks
-    cv2.imshow("Output", mask)
+    cv2.imshow("Output", gray)
     k = cv2.waitKey(5) & 0xFF
     if k == 27:
         break

@@ -48,14 +48,33 @@ You can use the requirements.txt file provided in the repository using:
 ```
 #this will download the dlib model from the artifactory and store it locally
 sh scripts/download_dlib.sh
-# to run the python script
-python3 main/eye_blink.py
 ```
 
 
+```
+# to run the python script
+python3 main/eye_blink.py
+```
 ![Eye_blink System](docs/eye_detection.png)
+
+
+
+ A backbone is a known network trained in many other tasks before and demonstrates its effectiveness. We are using the Dlib face_landmark_detector to convert a regular image into a simpler 2D image with the face features .
+
+
+ ```
+python3 main/back_bone.py
+ ```
+
 
 
 
 Docs link
 https://docs.google.com/document/d/1kXB_yZaSI_i0QZ1pxWHBYDS8_8odYn6kibB0ezmjVFc/edit?usp=sharing
+
+
+References
+
+- https://github.com/Vicomtech/DMD-Driver-Monitoring-Dataset
+- https://github.com/jhan15/driver_monitoring
+

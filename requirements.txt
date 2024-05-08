@@ -8,3 +8,5 @@ face_recognition
 pygame
 imutils
 scipy
+keras
+tensorflow
