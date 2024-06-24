@@ -6,6 +6,7 @@ from imutils import face_utils
 import dlib
 from urllib.request import urlretrieve
 from sklearn.model_selection import train_test_split
+import os
 
 # Download CEW dataset (replace with actual URL)
 dataset_url = "https://your_dataset_source.com/cew_dataset.zip"
@@ -78,4 +79,4 @@ model.save('eye_closure_sleepiness_model.h5')
 # Function to detect faces, extract features, and predict (replace with your sleepiness logic)
 def detect_and_predict(frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    rects =
+    
