@@ -25,10 +25,10 @@ def load_images_from_folder(folder):
 images= load_images_from_folder("/Users/christhaliyath/MTECH/dataset/archive/dms/image")
 
 for image in images:
-    cv2.imshow("Output", image)
-    k = cv2.waitKey(0) & 0xFF
-    if k == 27:
-        break
+    # cv2.imshow("Output", image)
+    # k = cv2.waitKey(0) & 0xFF
+    # if k == 27:
+    #     break
 
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
@@ -58,20 +58,23 @@ for image in images:
 
         # loop over the (x, y)-coordinates for the facial landmarks
         # and draw them on the image
-        for (x, y) in shape:
-            cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
+        for (X, Y) in shape:
+            cv2.circle(image, (X, Y), 1, (0, 0, 255), -1)
 
     # show the output image with the face detections + facial landmarks
-    cv2.imshow("Output", image)
+    # cv2.imshow("Output", image)
     # show the output image with the face detections + facial landmarks
-    cv2.imshow("Dlib_output", gray)
-    cropped_output = image[y:y+h, x:x+w]
-    height, width = cropped_output.shape
+    cropped_output = image[y:y+h,x:x+w]
+    print( cropped_output.shape)
+    cv2.imshow("Dlib_output", cropped_output)
+    gray = cv2.cvtColor(cropped_output, cv2.COLOR_BGR2GRAY)
+    width,height,channel = cropped_output.shape
     
+    #DEEP LEARNING PART
     model = Sequential()
     model.add(Conv2D(32, kernel_size=(3, 3),
         activation='relu',
-        input_shape=(width, height, 1)))
+        input_shape=(width, height,channel)))
     model.add(Conv2D(64, (3, 3), activation='relu'))
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Dropout(0.25))
@@ -85,9 +88,13 @@ for image in images:
         optimizer='adam',
         metrics=['accuracy'])
 
-    batch_size = 128
-    epochs = 10
-
+    batch_size = 2
+    epochs = 1
+    x_train = [cropped_output , cropped_output,cropped_output]
+    y_train = ['closed','closed','closed']
+    x_test = [cropped_output , cropped_output,cropped_output]
+    y_test = ['closed','closed','closed']
+    
     model.fit(x_train, y_train,
             batch_size=batch_size,
             epochs=epochs,
@@ -99,7 +106,7 @@ for image in images:
     model.save("test_model.h5")
 
     
-
+cv2.waitKey(0)
 #cv2.destroyAllWindows()
 
 

@@ -1,6 +1,5 @@
 # USAGE
 # python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg 
-
 # import the necessary packages
 from imutils import face_utils
 import numpy as np
@@ -40,9 +39,12 @@ for (i, rect) in enumerate(rects):
 
 	# convert dlib's rectangle to a OpenCV-style bounding box
 	# [i.e., (x, y, w, h)], then draw the face bounding box
+	# show the output image with the face detections + facial landmarks
+	
 	(x, y, w, h) = face_utils.rect_to_bb(rect)
 	print(x,y,w,h)
-	cv2.rectangle(image, (x-10, y-10), (x + w+10, y + h+10), (0, 255, 0), 2)
+	cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+	
 
 	# show the face number
 	cv2.putText(image, "Face #{}".format(i + 1), (x - 10, y - 10),
@@ -52,10 +54,17 @@ for (i, rect) in enumerate(rects):
 	# and draw them on the image
 	print(shape.size)
 	print(shape[0])
-	for (x, y) in shape:
-		cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
+	for (X, Y) in shape:
+		cv2.circle(image, (X, Y), 1, (0, 0, 255), -1)
 
-# show the output image with the face detections + facial landmarks
-#cv2.imshow("Output", image)
-cv2.imshow("Cropped_Output", image[y:y+h, x:x+w])
+	cv2.imshow("Output", image)
+
+	gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+	# Extract cropped face region (consider potential boundary issues)
+	cropped_output = image[y:y+h,x:x+w]
+	cv2.imshow("Cropped_Output", cropped_output)
+	print("size_of_cropped_image", cropped_output.size)
+	
+	    
+
 cv2.waitKey(0)
