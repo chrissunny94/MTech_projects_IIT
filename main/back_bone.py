@@ -43,7 +43,7 @@ while True:
             cv2.circle(gray, (x, y), 2, (0, 255, 0), -1)
     
     # show the output image with the face detections + facial landmarks
-    cv2.imshow("Output", gray)
+    cv2.imshow("Output", image)
     k = cv2.waitKey(5) & 0xFF
     if k == 27:
         break
