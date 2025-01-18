@@ -1,0 +1,15 @@
+numpy
+torch 
+torchvision 
+torchaudio
+# matplotlib
+# opencv-python
+cmake==3.21.0
+dlib==19.21.0
+matplotlib==3.4.2
+ninja==1.10.2
+numpy==1.21.0
+opencv-python==4.5.3.56
+scipy==1.7.0
+tqdm==4.61.2
+wget==3.2
