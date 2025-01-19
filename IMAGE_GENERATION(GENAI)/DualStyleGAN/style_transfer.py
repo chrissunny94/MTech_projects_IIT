@@ -14,7 +14,7 @@ class TestOptions():
     def __init__(self):
 
         self.parser = argparse.ArgumentParser(description="Exemplar-Based Style Transfer")
-        self.parser.add_argument("--content", type=str, default='./data/content/081680.jpg', help="path of the content image")
+        self.parser.add_argument("--content", type=str, default='./data/content/019706.jpg', help="path of the content image")
         self.parser.add_argument("--style", type=str, default='cartoon', help="target style type")
         self.parser.add_argument("--style_id", type=int, default=53, help="the id of the style image")
         self.parser.add_argument("--truncation", type=float, default=0.75, help="truncation for intrinsic style code (content)")

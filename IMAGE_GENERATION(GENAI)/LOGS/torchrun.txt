@@ -1,0 +1,406 @@
+============================================================
+(dualstylegan_env) chris@chris-B760M-DS3H:~/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN$ torchrun --nproc_per_node=8 --master_port=8765 finetune_stylegan.py --iter 600 --batch 4 --ckpt ./checkpoint/stylegan2-ffhq-config-f.pt --style cartoon --augment ./data/cartoon/lmdb/
+W0118 21:05:08.230057 139063343413056 torch/distributed/run.py:779] 
+W0118 21:05:08.230057 139063343413056 torch/distributed/run.py:779] *****************************************
+W0118 21:05:08.230057 139063343413056 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0118 21:05:08.230057 139063343413056 torch/distributed/run.py:779] *****************************************
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+Load options
+ada_every: 256
+ada_length: 500000
+ada_target: 0.6
+augment: True
+augment_p: 0
+batch: 4
+channel_multiplier: 2
+ckpt: ./checkpoint/stylegan2-ffhq-config-f.pt
+d_reg_every: 16
+g_reg_every: 4
+iter: 600
+local_rank: 0
+lr: 0.002
+mixing: 0.9
+model_path: ./checkpoint/
+n_sample: 9
+path: ./data/cartoon/lmdb/
+path_batch_shrink: 2
+path_regularize: 2
+r1: 10
+save_every: 10000
+size: 1024
+style: cartoon
+wandb: False
+**************************************************************************************************
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "finetune_stylegan.py", line 297, in <module>
+[rank5]:     synchronize()
+[rank5]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank5]:     dist.barrier()
+[rank5]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank5]:     return func(*args, **kwargs)
+[rank5]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank5]:     work = default_pg.barrier(opts=opts)
+[rank5]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank5]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank5]: Last error:
+[rank5]: Duplicate GPU detected : rank 5 and rank 0 both on CUDA device 1000
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "finetune_stylegan.py", line 297, in <module>
+[rank1]:     synchronize()
+[rank1]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank1]:     dist.barrier()
+[rank1]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank1]:     work = default_pg.barrier(opts=opts)
+[rank1]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank1]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank1]: Last error:
+[rank1]: Duplicate GPU detected : rank 1 and rank 0 both on CUDA device 1000
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "finetune_stylegan.py", line 297, in <module>
+[rank4]:     synchronize()
+[rank4]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank4]:     dist.barrier()
+[rank4]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank4]:     return func(*args, **kwargs)
+[rank4]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank4]:     work = default_pg.barrier(opts=opts)
+[rank4]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank4]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank4]: Last error:
+[rank4]: Duplicate GPU detected : rank 4 and rank 0 both on CUDA device 1000
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "finetune_stylegan.py", line 297, in <module>
+[rank0]:     synchronize()
+[rank0]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank0]:     dist.barrier()
+[rank0]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank0]:     work = default_pg.barrier(opts=opts)
+[rank0]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank0]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank0]: Last error:
+[rank0]: Duplicate GPU detected : rank 0 and rank 1 both on CUDA device 1000
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "finetune_stylegan.py", line 297, in <module>
+[rank3]:     synchronize()
+[rank3]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank3]:     dist.barrier()
+[rank3]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank3]:     work = default_pg.barrier(opts=opts)
+[rank3]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank3]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank3]: Last error:
+[rank3]: Duplicate GPU detected : rank 3 and rank 0 both on CUDA device 1000
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "finetune_stylegan.py", line 297, in <module>
+[rank7]:     synchronize()
+[rank7]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank7]:     dist.barrier()
+[rank7]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank7]:     return func(*args, **kwargs)
+[rank7]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank7]:     work = default_pg.barrier(opts=opts)
+[rank7]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank7]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank7]: Last error:
+[rank7]: Duplicate GPU detected : rank 7 and rank 0 both on CUDA device 1000
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "finetune_stylegan.py", line 297, in <module>
+[rank6]:     synchronize()
+[rank6]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank6]:     dist.barrier()
+[rank6]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank6]:     return func(*args, **kwargs)
+[rank6]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank6]:     work = default_pg.barrier(opts=opts)
+[rank6]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank6]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank6]: Last error:
+[rank6]: Duplicate GPU detected : rank 6 and rank 0 both on CUDA device 1000
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "finetune_stylegan.py", line 297, in <module>
+[rank2]:     synchronize()
+[rank2]:   File "/home/chris/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN/model/stylegan/distributed.py", line 31, in synchronize
+[rank2]:     dist.barrier()
+[rank2]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 3936, in barrier
+[rank2]:     work = default_pg.barrier(opts=opts)
+[rank2]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/NCCLUtils.hpp:275, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.20.5
+[rank2]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank2]: Last error:
+[rank2]: Duplicate GPU detected : rank 2 and rank 0 both on CUDA device 1000
+W0118 21:05:10.976663 139063343413056 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3187307 closing signal SIGTERM
+W0118 21:05:10.976956 139063343413056 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3187308 closing signal SIGTERM
+E0118 21:05:10.992446 139063343413056 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 3187305) of binary: /media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/bin/python3.8
+Traceback (most recent call last):
+  File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/media/chris/UBUNTU_PARTITION/anaconda3/envs/dualstylegan_env/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+finetune_stylegan.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-01-18_21:05:10
+  host      : chris-B760M-DS3H
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3187306)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-01-18_21:05:10
+  host      : chris-B760M-DS3H
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3187309)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-01-18_21:05:10
+  host      : chris-B760M-DS3H
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3187310)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2025-01-18_21:05:10
+  host      : chris-B760M-DS3H
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3187311)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2025-01-18_21:05:10
+  host      : chris-B760M-DS3H
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3187312)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-18_21:05:10
+  host      : chris-B760M-DS3H
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3187305)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+(dualstylegan_env) chris@chris-B760M-DS3H:~/GEN_AI_WORKSPACE/MTech_projects_IIT/IMAGE_GENERATION(GENAI)/DualStyleGAN$ 
